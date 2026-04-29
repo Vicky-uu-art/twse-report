@@ -1,0 +1,38 @@
+name: 台股每日成交金額報表
+
+on:
+  schedule:
+    # 每天 16:35 台灣時間（UTC+8），換算為 UTC 08:35
+    - cron: '35 8 * * 1-5'   # 週一到週五（排除週末）
+  workflow_dispatch:          # 允許手動觸發
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # 允許寫入 repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run report script
+        run: python scripts/fetch_and_report.py
+
+      - name: Commit and push reports
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add reports/ data/
+          git diff --staged --quiet || git commit -m "📊 每日報表 $(date +'%Y-%m-%d' -d 'TZ=\"Asia/Taipei\"')"
+          git push
