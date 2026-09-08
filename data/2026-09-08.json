@@ -1,0 +1,444 @@
+{
+  "date": "2026-09-08",
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "close": "2470.00",
+      "volume": 28931,
+      "amount": 717.6923074,
+      "change": 10.0,
+      "change_pct": 0.41,
+      "concepts": [
+        "半導體",
+        "晶圓代工",
+        "AI晶片",
+        "CoWoS先進封裝",
+        "台灣護國神山"
+      ],
+      "rank": 1
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "close": "188.00",
+      "volume": 222260,
+      "amount": 419.27685454,
+      "change": 8.0,
+      "change_pct": 4.44,
+      "concepts": [
+        "半導體",
+        "記憶體",
+        "DRAM"
+      ],
+      "rank": 2
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "close": "531.00",
+      "volume": 76221,
+      "amount": 406.94980627,
+      "change": 14.0,
+      "change_pct": 2.71,
+      "concepts": [
+        "半導體",
+        "記憶體",
+        "DRAM",
+        "HBM"
+      ],
+      "rank": 3
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "close": "4710.00",
+      "volume": 6511,
+      "amount": 309.4780064,
+      "change": 50.0,
+      "change_pct": 1.07,
+      "concepts": [
+        "IC設計",
+        "半導體",
+        "AI手機晶片",
+        "MediaTek"
+      ],
+      "rank": 4
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "close": "137.00",
+      "volume": 219176,
+      "amount": 303.12382562,
+      "change": 6.0,
+      "change_pct": 4.58,
+      "concepts": [
+        "半導體",
+        "晶圓代工"
+      ],
+      "rank": 5
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "close": "186.50",
+      "volume": 123233,
+      "amount": 229.10532283,
+      "change": 10.5,
+      "change_pct": 5.97,
+      "concepts": [
+        "EMS代工",
+        "鴻海生態系"
+      ],
+      "rank": 6
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "close": "567.00",
+      "volume": 39419,
+      "amount": 225.58357199,
+      "change": 22.0,
+      "change_pct": 4.04,
+      "concepts": [
+        "被動元件",
+        "IC設計"
+      ],
+      "rank": 7
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "close": "29.60",
+      "volume": 623892,
+      "amount": 184.52065566,
+      "change": 0.9,
+      "change_pct": 3.14,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 8
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "close": "505.00",
+      "volume": 33442,
+      "amount": 170.72598189,
+      "change": 4.0,
+      "change_pct": 0.8,
+      "concepts": [
+        "連接器",
+        "AI伺服器",
+        "PCB"
+      ],
+      "rank": 9
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "close": "954.00",
+      "volume": 17812,
+      "amount": 170.42118575,
+      "change": 5.0,
+      "change_pct": 0.53,
+      "concepts": [
+        "PCB",
+        "電路板",
+        "ABF載板"
+      ],
+      "rank": 10
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "close": "12520.00",
+      "volume": 1284,
+      "amount": 166.62072085,
+      "change": 1385.0,
+      "change_pct": 12.44,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 11
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "close": "235.00",
+      "volume": 65193,
+      "amount": 153.06594271,
+      "change": 4.5,
+      "change_pct": 1.95,
+      "concepts": [
+        "石化",
+        "塑化"
+      ],
+      "rank": 12
+    },
+    {
+      "code": "3167",
+      "name": "大量",
+      "close": "938.00",
+      "volume": 16040,
+      "amount": 149.52181089,
+      "change": 55.0,
+      "change_pct": 6.23,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 13
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "close": "6970.00",
+      "volume": 1903,
+      "amount": 131.5680215,
+      "change": 405.0,
+      "change_pct": 6.17,
+      "concepts": [
+        "半導體設備",
+        "IC自動化測試設備",
+        "AI晶片測試",
+        "封測設備"
+      ],
+      "rank": 14
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "close": "1955.00",
+      "volume": 6441,
+      "amount": 128.5020859,
+      "change": 145.0,
+      "change_pct": 8.01,
+      "concepts": [
+        "網通設備",
+        "AI資料中心交換器",
+        "乙太網路"
+      ],
+      "rank": 15
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "close": "6500.00",
+      "volume": 1975,
+      "amount": 127.57771195,
+      "change": 160.0,
+      "change_pct": 2.52,
+      "concepts": [
+        "光學鏡頭",
+        "車用鏡頭"
+      ],
+      "rank": 16
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "close": "72.40",
+      "volume": 172801,
+      "amount": 126.58034103,
+      "change": 0.5,
+      "change_pct": 0.7,
+      "concepts": [
+        "半導體",
+        "晶圓代工",
+        "特殊製程"
+      ],
+      "rank": 17
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "close": "294.50",
+      "volume": 40437,
+      "amount": 124.19425467,
+      "change": 32.5,
+      "change_pct": 12.4,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 18
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "close": "2340.00",
+      "volume": 5080,
+      "amount": 120.65729035,
+      "change": 150.0,
+      "change_pct": 6.85,
+      "concepts": [
+        "雲端伺服器",
+        "AI伺服器",
+        "ODM"
+      ],
+      "rank": 19
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "close": "328.00",
+      "volume": 35435,
+      "amount": 117.41782175,
+      "change": 19.5,
+      "change_pct": 6.32,
+      "concepts": [
+        "筆電代工",
+        "AI PC"
+      ],
+      "rank": 20
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "close": "1805.00",
+      "volume": 6331,
+      "amount": 115.0993658,
+      "change": 45.0,
+      "change_pct": 2.56,
+      "concepts": [
+        "電源管理",
+        "AI伺服器",
+        "散熱",
+        "電動車"
+      ],
+      "rank": 21
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "close": "2265.00",
+      "volume": 4951,
+      "amount": 112.51705715,
+      "change": 35.0,
+      "change_pct": 1.57,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 22
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "close": "3285.00",
+      "volume": 3350,
+      "amount": 111.2556006,
+      "change": 135.0,
+      "change_pct": 4.29,
+      "concepts": [
+        "散熱模組",
+        "AI伺服器散熱",
+        "液冷"
+      ],
+      "rank": 23
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "close": "251.50",
+      "volume": 40240,
+      "amount": 101.19470867,
+      "change": 4.5,
+      "change_pct": 1.82,
+      "concepts": [
+        "EMS代工",
+        "AI伺服器",
+        "電動車",
+        "鴻海生態系"
+      ],
+      "rank": 24
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "close": "5960.00",
+      "volume": 1602,
+      "amount": 95.1272572,
+      "change": 25.0,
+      "change_pct": 0.42,
+      "concepts": [
+        "IC設計",
+        "半導體",
+        "AI晶片"
+      ],
+      "rank": 25
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "close": "48.80",
+      "volume": 188143,
+      "amount": 93.15338344,
+      "change": 1.15,
+      "change_pct": 2.41,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 26
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "close": "231.00",
+      "volume": 40022,
+      "amount": 92.82640957,
+      "change": 9.0,
+      "change_pct": 4.05,
+      "concepts": [
+        "PCB",
+        "電路板",
+        "AI伺服器",
+        "ABF載板"
+      ],
+      "rank": 27
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "close": "747.00",
+      "volume": 11962,
+      "amount": 90.2779498,
+      "change": 24.0,
+      "change_pct": 3.32,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 28
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "close": "800.00",
+      "volume": 11072,
+      "amount": 89.40456936,
+      "change": 13.0,
+      "change_pct": 1.65,
+      "concepts": [
+        "PCB",
+        "電路板",
+        "ABF載板"
+      ],
+      "rank": 29
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "close": "618.00",
+      "volume": 13336,
+      "amount": 82.20755524,
+      "change": 3.0,
+      "change_pct": 0.49,
+      "concepts": [
+        "半導體",
+        "封裝測試",
+        "先進封裝",
+        "CoWoS"
+      ],
+      "rank": 30
+    }
+  ]
+}
