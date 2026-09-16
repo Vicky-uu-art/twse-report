@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台股成交金額前30名 — 2026-09-16</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f8fafc;color:#1e293b;font-family:-apple-system,"Noto Sans TC",sans-serif;padding:24px;font-size:14px}
+h1{font-size:1.5rem;font-weight:700;color:#0f172a;margin-bottom:4px}
+.sub{color:#64748b;font-size:.82rem;margin-bottom:20px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.sc{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 18px;min-width:148px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.sc-label{font-size:.7rem;color:#94a3b8;margin-bottom:3px}.sc-val{font-size:1.2rem;font-weight:700;color:#2563eb}
+.date-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;align-items:center}
+.date-nav span{font-size:.78rem;color:#94a3b8}
+.nav-date{background:#fff;border:1px solid #e2e8f0;color:#475569;padding:4px 10px;border-radius:6px;text-decoration:none;font-size:.78rem;transition:.15s}
+.nav-date:hover,.nav-date.active{background:#2563eb;color:#fff;border-color:#2563eb}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:.78rem;color:#475569}
+.ld{display:flex;align-items:center;gap:5px}.ldot{width:11px;height:11px;border-radius:2px}
+.chart-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.chart-card h2{font-size:.82rem;color:#94a3b8;margin-bottom:10px}.chart-wrap{height:300px}
+.table-wrap{overflow-x:auto;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:.83rem}
+th{background:#f1f5f9;color:#64748b;padding:9px 12px;text-align:left;font-weight:600;border-bottom:1px solid #e2e8f0;position:sticky;top:0}
+td{padding:9px 12px;border-bottom:1px solid #f1f5f9;vertical-align:top}
+tr:hover td{background:#f8fafc}
+tr.new-stock td{background:#fffbeb}tr.new-concept td{background:#fff7ed}
+.rank{font-weight:700;color:#94a3b8;width:40px}.code{font-family:monospace;color:#2563eb;font-weight:600;width:58px}
+.name{max-width:210px;line-height:1.5}.price,.vol,.amt{text-align:right}
+.amt strong{color:#1d4ed8}.tags{max-width:190px}
+.chg{text-align:right;font-weight:600;width:78px}
+.up{color:#16a34a}.dn{color:#dc2626}.flat{color:#94a3b8}
+.badge{display:inline-block;font-size:.65rem;padding:2px 5px;border-radius:3px;margin:2px 2px 2px 0;font-weight:600}
+.badge-new{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
+.badge-concept{background:#ffedd5;color:#9a3412;border:1px solid #fdba74}
+.tag{display:inline-block;font-size:.68rem;background:#eff6ff;color:#1d4ed8;padding:1px 5px;border-radius:3px;margin:2px 2px 1px 0;border:1px solid #bfdbfe}
+.tag-hl{background:#fef3c7;color:#92400e;border-color:#fcd34d}
+.news-block{margin-top:4px}
+.ni{font-size:.74rem;color:#64748b;margin:3px 0;line-height:1.4}
+.ni a{color:#2563eb;text-decoration:none}.ni a:hover{text-decoration:underline}
+.nsrc{display:inline-block;font-size:.63rem;background:#eff6ff;color:#1d4ed8;padding:1px 4px;border-radius:2px;margin-right:3px;border:1px solid #bfdbfe}
+.ni.empty{color:#cbd5e1;font-size:.7rem}
+</style>
+</head>
+<body>
+<h1>📊 台股每日成交金額前30名</h1>
+<div class="sub">資料日期：2026-09-16　資料來源：台灣證交所 ＋ 鉅亨網 ＋ Yahoo股市 ＋ 聯合新聞網　｜　已排除 ETF 及權證</div>
+<div class="stats">
+  <div class="sc"><div class="sc-label">前30名合計成交金額</div><div class="sc-val">3677 億</div></div>
+  <div class="sc"><div class="sc-label">今日新進榜個股</div><div class="sc-val">6 檔</div></div>
+  <div class="sc"><div class="sc-label">今日新出現概念股</div><div class="sc-val">7 個</div></div>
+</div>
+<div class="date-nav"><span>歷史：</span><a href="2026-09-16.html" class="nav-date  active">2026-09-16</a>
+<a href="2026-09-15.html" class="nav-date">2026-09-15</a>
+<a href="2026-09-14.html" class="nav-date">2026-09-14</a>
+<a href="2026-09-11.html" class="nav-date">2026-09-11</a>
+<a href="2026-09-10.html" class="nav-date">2026-09-10</a>
+<a href="2026-09-09.html" class="nav-date">2026-09-09</a>
+<a href="2026-09-08.html" class="nav-date">2026-09-08</a>
+<a href="2026-09-07.html" class="nav-date">2026-09-07</a>
+<a href="2026-09-04.html" class="nav-date">2026-09-04</a>
+<a href="2026-09-03.html" class="nav-date">2026-09-03</a>
+<a href="index.html" class="nav-date">📋 全部</a></div>
+<div class="legend">
+  <div class="ld"><div class="ldot" style="background:#3b82f6"></div>一般個股</div>
+  <div class="ld"><div class="ldot" style="background:#f59e0b"></div>🟡 今日新進榜</div>
+  <div class="ld"><div class="ldot" style="background:#f97316"></div>🟠 新概念族群</div>
+</div>
+<div class="chart-card">
+  <h2>成交金額（億元）— 前30名分布</h2>
+  <div class="chart-wrap"><canvas id="bar"></canvas></div>
+</div>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>排名</th><th>代碼</th><th>名稱 / 新聞</th><th>收盤價</th><th>成交張數</th><th>成交金額(億)</th><th>所屬概念股</th><th>漲跌幅</th></tr></thead>
+  <tbody>
+<tr class="">
+  <td class="rank">#1</td>
+  <td class="code">2330</td>
+  <td class="name">台積電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">2380.00</td>
+  <td class="vol">20,919</td>
+  <td class="amt"><strong>498.13</strong></td>
+  <td class="tags"><span class="tag ">半導體</span> <span class="tag ">晶圓代工</span> <span class="tag ">AI晶片</span> <span class="tag ">CoWoS先進封裝</span> <span class="tag ">台灣護國神山</span></td>
+  <td class="chg flat">─ 0.00%</td>
+</tr>
+<tr class="">
+  <td class="rank">#2</td>
+  <td class="code">2454</td>
+  <td class="name">聯發科<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">4530.00</td>
+  <td class="vol">6,640</td>
+  <td class="amt"><strong>302.18</strong></td>
+  <td class="tags"><span class="tag ">IC設計</span> <span class="tag ">半導體</span> <span class="tag ">AI手機晶片</span> <span class="tag ">MediaTek</span></td>
+  <td class="chg up">▲ 2.26%</td>
+</tr>
+<tr class="">
+  <td class="rank">#3</td>
+  <td class="code">6669</td>
+  <td class="name">緯穎<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">2165.00</td>
+  <td class="vol">9,125</td>
+  <td class="amt"><strong>199.12</strong></td>
+  <td class="tags"><span class="tag ">雲端伺服器</span> <span class="tag ">AI伺服器</span> <span class="tag ">ODM</span></td>
+  <td class="chg up">▲ 7.44%</td>
+</tr>
+<tr class="">
+  <td class="rank">#4</td>
+  <td class="code">2308</td>
+  <td class="name">台達電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">1710.00</td>
+  <td class="vol">10,673</td>
+  <td class="amt"><strong>181.52</strong></td>
+  <td class="tags"><span class="tag ">電源管理</span> <span class="tag ">AI伺服器</span> <span class="tag ">散熱</span> <span class="tag ">電動車</span></td>
+  <td class="chg up">▲ 2.40%</td>
+</tr>
+<tr class="">
+  <td class="rank">#5</td>
+  <td class="code">2408</td>
+  <td class="name">南亞科<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">492.50</td>
+  <td class="vol">36,437</td>
+  <td class="amt"><strong>176.82</strong></td>
+  <td class="tags"><span class="tag ">半導體</span> <span class="tag ">記憶體</span> <span class="tag ">DRAM</span> <span class="tag ">HBM</span></td>
+  <td class="chg up">▲ 5.80%</td>
+</tr>
+<tr class="">
+  <td class="rank">#6</td>
+  <td class="code">2303</td>
+  <td class="name">聯電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">142.00</td>
+  <td class="vol">117,165</td>
+  <td class="amt"><strong>165.20</strong></td>
+  <td class="tags"><span class="tag ">半導體</span> <span class="tag ">晶圓代工</span></td>
+  <td class="chg up">▲ 2.53%</td>
+</tr>
+<tr class="">
+  <td class="rank">#7</td>
+  <td class="code">3008</td>
+  <td class="name">大立光<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">6225.00</td>
+  <td class="vol">2,427</td>
+  <td class="amt"><strong>152.88</strong></td>
+  <td class="tags"><span class="tag ">光學鏡頭</span> <span class="tag ">車用鏡頭</span></td>
+  <td class="chg up">▲ 2.81%</td>
+</tr>
+<tr class="">
+  <td class="rank">#8</td>
+  <td class="code">2327</td>
+  <td class="name">國巨*<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">536.00</td>
+  <td class="vol">27,854</td>
+  <td class="amt"><strong>148.62</strong></td>
+  <td class="tags"><span class="tag ">被動元件</span> <span class="tag ">IC設計</span></td>
+  <td class="chg up">▲ 0.19%</td>
+</tr>
+<tr class="">
+  <td class="rank">#9</td>
+  <td class="code">2344</td>
+  <td class="name">華邦電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">169.00</td>
+  <td class="vol">83,218</td>
+  <td class="amt"><strong>138.92</strong></td>
+  <td class="tags"><span class="tag ">半導體</span> <span class="tag ">記憶體</span> <span class="tag ">DRAM</span></td>
+  <td class="chg up">▲ 5.96%</td>
+</tr>
+<tr class="">
+  <td class="rank">#10</td>
+  <td class="code">6213</td>
+  <td class="name">聯茂<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">550.00</td>
+  <td class="vol">21,280</td>
+  <td class="amt"><strong>114.24</strong></td>
+  <td class="tags"><span class="tag ">其他</span></td>
+  <td class="chg up">▲ 5.97%</td>
+</tr>
+<tr class="">
+  <td class="rank">#11</td>
+  <td class="code">3037</td>
+  <td class="name">欣興<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">961.00</td>
+  <td class="vol">11,860</td>
+  <td class="amt"><strong>113.35</strong></td>
+  <td class="tags"><span class="tag ">PCB</span> <span class="tag ">電路板</span> <span class="tag ">ABF載板</span></td>
+  <td class="chg up">▲ 1.05%</td>
+</tr>
+<tr class="">
+  <td class="rank">#12</td>
+  <td class="code">1303</td>
+  <td class="name">南亞<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">224.00</td>
+  <td class="vol">48,008</td>
+  <td class="amt"><strong>108.98</strong></td>
+  <td class="tags"><span class="tag ">石化</span> <span class="tag ">塑化</span></td>
+  <td class="chg up">▲ 1.13%</td>
+</tr>
+<tr class="">
+  <td class="rank">#13</td>
+  <td class="code">4958</td>
+  <td class="name">臻鼎-KY<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">493.50</td>
+  <td class="vol">21,886</td>
+  <td class="amt"><strong>106.25</strong></td>
+  <td class="tags"><span class="tag ">連接器</span> <span class="tag ">AI伺服器</span> <span class="tag ">PCB</span></td>
+  <td class="chg up">▲ 3.35%</td>
+</tr>
+<tr class="new-stock">
+  <td class="rank">#14</td>
+  <td class="code">2455</td>
+  <td class="name">全新<span class="badge badge-new">★ 新進榜</span><div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">515.00</td>
+  <td class="vol">19,718</td>
+  <td class="amt"><strong>102.52</strong></td>
+  <td class="tags"><span class="tag ">其他</span></td>
+  <td class="chg up">▲ 0.98%</td>
+</tr>
+<tr class="">
+  <td class="rank">#15</td>
+  <td class="code">2481</td>
+  <td class="name">強茂<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">168.50</td>
+  <td class="vol">62,194</td>
+  <td class="amt"><strong>101.59</strong></td>
+  <td class="tags"><span class="tag ">其他</span></td>
+  <td class="chg up">▲ 9.77%</td>
+</tr>
+<tr class="">
+  <td class="rank">#16</td>
+  <td class="code">3189</td>
+  <td class="name">景碩<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">820.00</td>
+  <td class="vol">10,957</td>
+  <td class="amt"><strong>89.09</strong></td>
+  <td class="tags"><span class="tag ">PCB</span> <span class="tag ">電路板</span> <span class="tag ">ABF載板</span></td>
+  <td class="chg up">▲ 3.14%</td>
+</tr>
+<tr class="">
+  <td class="rank">#17</td>
+  <td class="code">3017</td>
+  <td class="name">奇鋐<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">3175.00</td>
+  <td class="vol">2,744</td>
+  <td class="amt"><strong>86.92</strong></td>
+  <td class="tags"><span class="tag ">散熱模組</span> <span class="tag ">AI伺服器散熱</span> <span class="tag ">液冷</span></td>
+  <td class="chg up">▲ 1.93%</td>
+</tr>
+<tr class="">
+  <td class="rank">#18</td>
+  <td class="code">8046</td>
+  <td class="name">南電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">1105.00</td>
+  <td class="vol">7,955</td>
+  <td class="amt"><strong>86.77</strong></td>
+  <td class="tags"><span class="tag ">PCB</span> <span class="tag ">電路板</span> <span class="tag ">ABF載板</span> <span class="tag ">南亞電路板</span> <span class="tag ">AI伺服器</span></td>
+  <td class="chg up">▲ 1.84%</td>
+</tr>
+<tr class="">
+  <td class="rank">#19</td>
+  <td class="code">3653</td>
+  <td class="name">健策<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">5240.00</td>
+  <td class="vol">1,608</td>
+  <td class="amt"><strong>85.91</strong></td>
+  <td class="tags"><span class="tag ">導線架</span> <span class="tag ">AI晶片散熱</span> <span class="tag ">半導體</span></td>
+  <td class="chg up">▲ 1.35%</td>
+</tr>
+<tr class="">
+  <td class="rank">#20</td>
+  <td class="code">2383</td>
+  <td class="name">台光電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">5085.00</td>
+  <td class="vol">1,686</td>
+  <td class="amt"><strong>85.85</strong></td>
+  <td class="tags"><span class="tag ">PCB材料</span> <span class="tag ">覆銅板CCL</span> <span class="tag ">AI伺服器</span></td>
+  <td class="chg up">▲ 0.59%</td>
+</tr>
+<tr class="">
+  <td class="rank">#21</td>
+  <td class="code">3443</td>
+  <td class="name">創意<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">6170.00</td>
+  <td class="vol">1,261</td>
+  <td class="amt"><strong>77.88</strong></td>
+  <td class="tags"><span class="tag ">IC設計</span> <span class="tag ">半導體</span> <span class="tag ">AI晶片</span></td>
+  <td class="chg up">▲ 2.24%</td>
+</tr>
+<tr class="">
+  <td class="rank">#22</td>
+  <td class="code">2409</td>
+  <td class="name">友達<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">29.40</td>
+  <td class="vol">262,801</td>
+  <td class="amt"><strong>76.20</strong></td>
+  <td class="tags"><span class="tag ">其他</span></td>
+  <td class="chg up">▲ 5.38%</td>
+</tr>
+<tr class="">
+  <td class="rank">#23</td>
+  <td class="code">3661</td>
+  <td class="name">世芯-KY<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">3345.00</td>
+  <td class="vol">1,986</td>
+  <td class="amt"><strong>66.82</strong></td>
+  <td class="tags"><span class="tag ">IC設計</span> <span class="tag ">半導體</span> <span class="tag ">AI晶片</span> <span class="tag ">ASIC</span></td>
+  <td class="chg up">▲ 0.30%</td>
+</tr>
+<tr class="">
+  <td class="rank">#24</td>
+  <td class="code">6770</td>
+  <td class="name">力積電<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">69.90</td>
+  <td class="vol">91,880</td>
+  <td class="amt"><strong>63.66</strong></td>
+  <td class="tags"><span class="tag ">半導體</span> <span class="tag ">晶圓代工</span> <span class="tag ">特殊製程</span></td>
+  <td class="chg up">▲ 4.48%</td>
+</tr>
+<tr class="new-stock">
+  <td class="rank">#25</td>
+  <td class="code">3026</td>
+  <td class="name">禾伸堂<span class="badge badge-new">★ 新進榜</span><div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">772.00</td>
+  <td class="vol">8,067</td>
+  <td class="amt"><strong>60.62</strong></td>
+  <td class="tags"><span class="tag ">其他</span></td>
+  <td class="chg up">▲ 6.34%</td>
+</tr>
+<tr class="new-stock">
+  <td class="rank">#26</td>
+  <td class="code">3231</td>
+  <td class="name">緯創<span class="badge badge-new">★ 新進榜</span><span class="badge badge-concept">🔥 新概念：鴻海生態系</span><span class="badge badge-concept">🔥 新概念：EMS代工</span><div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">183.00</td>
+  <td class="vol">32,629</td>
+  <td class="amt"><strong>59.68</strong></td>
+  <td class="tags"><span class="tag tag-hl">EMS代工</span> <span class="tag tag-hl">鴻海生態系</span></td>
+  <td class="chg up">▲ 0.27%</td>
+</tr>
+<tr class="">
+  <td class="rank">#27</td>
+  <td class="code">3711</td>
+  <td class="name">日月光投控<div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">605.00</td>
+  <td class="vol">9,509</td>
+  <td class="amt"><strong>57.43</strong></td>
+  <td class="tags"><span class="tag ">半導體</span> <span class="tag ">封裝測試</span> <span class="tag ">先進封裝</span> <span class="tag ">CoWoS</span></td>
+  <td class="chg up">▲ 2.20%</td>
+</tr>
+<tr class="new-stock">
+  <td class="rank">#28</td>
+  <td class="code">2382</td>
+  <td class="name">廣達<span class="badge badge-new">★ 新進榜</span><span class="badge badge-concept">🔥 新概念：AI PC</span><span class="badge badge-concept">🔥 新概念：筆電代工</span><div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">340.50</td>
+  <td class="vol">16,995</td>
+  <td class="amt"><strong>57.40</strong></td>
+  <td class="tags"><span class="tag tag-hl">筆電代工</span> <span class="tag tag-hl">AI PC</span></td>
+  <td class="chg up">▲ 2.25%</td>
+</tr>
+<tr class="new-stock">
+  <td class="rank">#29</td>
+  <td class="code">2345</td>
+  <td class="name">智邦<span class="badge badge-new">★ 新進榜</span><span class="badge badge-concept">🔥 新概念：AI資料中心交換器</span><span class="badge badge-concept">🔥 新概念：乙太網路</span><span class="badge badge-concept">🔥 新概念：網通設備</span><div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">1840.00</td>
+  <td class="vol">3,116</td>
+  <td class="amt"><strong>57.35</strong></td>
+  <td class="tags"><span class="tag tag-hl">網通設備</span> <span class="tag tag-hl">AI資料中心交換器</span> <span class="tag tag-hl">乙太網路</span></td>
+  <td class="chg flat">─ 0.00%</td>
+</tr>
+<tr class="new-stock">
+  <td class="rank">#30</td>
+  <td class="code">2059</td>
+  <td class="name">川湖<span class="badge badge-new">★ 新進榜</span><div class="news-block"><div class="ni empty">— 今日無相關新聞 —</div></div></td>
+  <td class="price">12045.00</td>
+  <td class="vol">454</td>
+  <td class="amt"><strong>55.24</strong></td>
+  <td class="tags"><span class="tag ">其他</span></td>
+  <td class="chg up">▲ 2.82%</td>
+</tr></tbody>
+</table>
+</div>
+<script>
+new Chart(document.getElementById('bar'),{
+  type:'bar',
+  data:{labels:["台積電 2330", "聯發科 2454", "緯穎 6669", "台達電 2308", "南亞科 2408", "聯電 2303", "大立光 3008", "國巨* 2327", "華邦電 2344", "聯茂 6213", "欣興 3037", "南亞 1303", "臻鼎-KY 4958", "全新 2455", "強茂 2481", "景碩 3189", "奇鋐 3017", "南電 8046", "健策 3653", "台光電 2383", "創意 3443", "友達 2409", "世芯-KY 3661", "力積電 6770", "禾伸堂 3026", "緯創 3231", "日月光投控 3711", "廣達 2382", "智邦 2345", "川湖 2059"],datasets:[{data:[498.13, 302.18, 199.12, 181.52, 176.82, 165.2, 152.88, 148.62, 138.92, 114.24, 113.35, 108.98, 106.25, 102.52, 101.59, 89.09, 86.92, 86.77, 85.91, 85.85, 77.88, 76.2, 66.82, 63.66, 60.62, 59.68, 57.43, 57.4, 57.35, 55.24],backgroundColor:["#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#f59e0b", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#3b82f6", "#f59e0b", "#f59e0b", "#3b82f6", "#f59e0b", "#f59e0b", "#f59e0b"],borderRadius:3}]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(2)+' 億'}}},
+    scales:{x:{ticks:{color:'#94a3b8',font:{size:10},maxRotation:45},grid:{color:'#f1f5f9'}},
+             y:{ticks:{color:'#94a3b8',callback:v=>v+'億'},grid:{color:'#f1f5f9'}}}}
+});
+</script>
+</body></html>
