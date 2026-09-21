@@ -1,0 +1,445 @@
+{
+  "date": "2026-09-21",
+  "stocks": [
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "close": "5010.00",
+      "volume": 11237,
+      "amount": 556.05163215,
+      "change": 300.0,
+      "change_pct": 6.37,
+      "concepts": [
+        "IC設計",
+        "半導體",
+        "AI手機晶片",
+        "MediaTek"
+      ],
+      "rank": 1
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "close": "2480.00",
+      "volume": 16086,
+      "amount": 397.727291,
+      "change": 20.0,
+      "change_pct": 0.81,
+      "concepts": [
+        "半導體",
+        "晶圓代工",
+        "AI晶片",
+        "CoWoS先進封裝",
+        "台灣護國神山"
+      ],
+      "rank": 2
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "close": "1875.00",
+      "volume": 19102,
+      "amount": 350.44465305,
+      "change": 140.0,
+      "change_pct": 8.07,
+      "concepts": [
+        "電源管理",
+        "AI伺服器",
+        "散熱",
+        "電動車"
+      ],
+      "rank": 3
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "close": "33.35",
+      "volume": 822971,
+      "amount": 269.63372568,
+      "change": 3.0,
+      "change_pct": 9.88,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 4
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "close": "157.00",
+      "volume": 158568,
+      "amount": 247.27121404,
+      "change": 1.0,
+      "change_pct": 0.64,
+      "concepts": [
+        "半導體",
+        "晶圓代工"
+      ],
+      "rank": 5
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "close": "7615.00",
+      "volume": 3187,
+      "amount": 235.26975,
+      "change": 465.0,
+      "change_pct": 6.5,
+      "concepts": [
+        "IC設計",
+        "半導體",
+        "AI晶片"
+      ],
+      "rank": 6
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "close": "827.00",
+      "volume": 23391,
+      "amount": 198.35033475,
+      "change": 5.0,
+      "change_pct": 0.61,
+      "concepts": [
+        "PCB",
+        "電路板",
+        "ABF載板"
+      ],
+      "rank": 7
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "close": "1020.00",
+      "volume": 17461,
+      "amount": 179.3866666,
+      "change": 39.0,
+      "change_pct": 3.98,
+      "concepts": [
+        "PCB",
+        "電路板",
+        "ABF載板"
+      ],
+      "rank": 8
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "close": "516.00",
+      "volume": 34499,
+      "amount": 179.14455456,
+      "change": 9.0,
+      "change_pct": 1.78,
+      "concepts": [
+        "半導體",
+        "記憶體",
+        "DRAM",
+        "HBM"
+      ],
+      "rank": 9
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "close": "301.50",
+      "volume": 56082,
+      "amount": 169.50701224,
+      "change": 10.0,
+      "change_pct": 3.43,
+      "concepts": [
+        "半導體",
+        "封裝測試",
+        "IC測試",
+        "AI晶片測試",
+        "ASIC測試",
+        "CoPoS"
+      ],
+      "rank": 10
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "close": "557.00",
+      "volume": 27387,
+      "amount": 154.52584725,
+      "change": 7.0,
+      "change_pct": 1.27,
+      "concepts": [
+        "被動元件",
+        "IC設計"
+      ],
+      "rank": 11
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "close": "1060.00",
+      "volume": 13819,
+      "amount": 150.39683175,
+      "change": 40.0,
+      "change_pct": 3.92,
+      "concepts": [
+        "PCB",
+        "電路板",
+        "ABF載板",
+        "南亞電路板",
+        "AI伺服器"
+      ],
+      "rank": 12
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "close": "50.40",
+      "volume": 287816,
+      "amount": 143.07612778,
+      "change": 2.15,
+      "change_pct": 4.46,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 13
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "close": "174.00",
+      "volume": 76635,
+      "amount": 134.68615827,
+      "change": 5.5,
+      "change_pct": 3.26,
+      "concepts": [
+        "半導體",
+        "記憶體",
+        "DRAM"
+      ],
+      "rank": 14
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "close": "6400.00",
+      "volume": 2092,
+      "amount": 134.21777955,
+      "change": 30.0,
+      "change_pct": 0.47,
+      "concepts": [
+        "光學鏡頭",
+        "車用鏡頭"
+      ],
+      "rank": 15
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "close": "470.00",
+      "volume": 26718,
+      "amount": 125.82351403,
+      "change": 3.0,
+      "change_pct": 0.64,
+      "concepts": [
+        "連接器",
+        "AI伺服器",
+        "PCB"
+      ],
+      "rank": 16
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "close": "239.50",
+      "volume": 50390,
+      "amount": 121.13971868,
+      "change": 1.5,
+      "change_pct": 0.63,
+      "concepts": [
+        "石化",
+        "塑化"
+      ],
+      "rank": 17
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "close": "4895.00",
+      "volume": 2394,
+      "amount": 116.55101115,
+      "change": 5.0,
+      "change_pct": 0.1,
+      "concepts": [
+        "PCB材料",
+        "覆銅板CCL",
+        "AI伺服器"
+      ],
+      "rank": 18
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "close": "663.00",
+      "volume": 17093,
+      "amount": 113.28964828,
+      "change": 25.0,
+      "change_pct": 3.92,
+      "concepts": [
+        "半導體",
+        "封裝測試",
+        "先進封裝",
+        "CoWoS"
+      ],
+      "rank": 19
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "close": "6000.00",
+      "volume": 1732,
+      "amount": 105.92397735,
+      "change": 540.0,
+      "change_pct": 9.89,
+      "concepts": [
+        "半導體設備",
+        "IC自動化測試設備",
+        "AI晶片測試",
+        "封測設備"
+      ],
+      "rank": 20
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "close": "2300.00",
+      "volume": 4506,
+      "amount": 102.14618145,
+      "change": 90.0,
+      "change_pct": 4.07,
+      "concepts": [
+        "線纜",
+        "AI伺服器",
+        "電子零組件"
+      ],
+      "rank": 21
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "close": "542.00",
+      "volume": 17958,
+      "amount": 94.89603049,
+      "change": 37.0,
+      "change_pct": 7.33,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 22
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "close": "2375.00",
+      "volume": 3796,
+      "amount": 91.07745895,
+      "change": 85.0,
+      "change_pct": 3.71,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 23
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "close": "572.00",
+      "volume": 15658,
+      "amount": 88.85686478,
+      "change": 16.0,
+      "change_pct": 2.88,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 24
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "close": "5795.00",
+      "volume": 1406,
+      "amount": 83.59155395,
+      "change": 640.0,
+      "change_pct": 12.42,
+      "concepts": [
+        "連接器",
+        "AI伺服器"
+      ],
+      "rank": 25
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "close": "292.50",
+      "volume": 27709,
+      "amount": 81.05964933,
+      "change": 8.5,
+      "change_pct": 2.99,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 26
+    },
+    {
+      "code": "3605",
+      "name": "宏致",
+      "close": "169.00",
+      "volume": 50842,
+      "amount": 80.82922274,
+      "change": 15.0,
+      "change_pct": 9.74,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 27
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "close": "1045.00",
+      "volume": 7314,
+      "amount": 75.27159825,
+      "change": 25.0,
+      "change_pct": 2.45,
+      "concepts": [
+        "PCB",
+        "電路板"
+      ],
+      "rank": 28
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "close": "308.50",
+      "volume": 22904,
+      "amount": 72.19142937,
+      "change": 1.0,
+      "change_pct": 0.33,
+      "concepts": [
+        "其他"
+      ],
+      "rank": 29
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "close": "2150.00",
+      "volume": 3304,
+      "amount": 70.78239345,
+      "change": 10.0,
+      "change_pct": 0.47,
+      "concepts": [
+        "雲端伺服器",
+        "AI伺服器",
+        "ODM"
+      ],
+      "rank": 30
+    }
+  ]
+}
